@@ -1,0 +1,11 @@
+<div class="container">
+    <app-header (searchEvent)='handleSearch($event)'></app-header>
+    <div class="results">
+      <div class="total">
+        {{totalResults}}: {{ totalCount$ | async }}
+      </div>
+      <ng-container *ngFor="let user of  users$ | async">
+        <app-details-card [user]="user"></app-details-card>
+      </ng-container>
+    </div>
+  </div>

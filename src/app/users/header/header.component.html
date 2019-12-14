@@ -1,0 +1,10 @@
+<div class='container'>
+  <form [formGroup]="searchForm">
+        <span>
+          <input type="text" class="form-inputs" formControlName="searchString" placeholder="Search Users">
+          <button  name="Search" (click)="search()" class="form-inputs">
+            <img src="../../../assets/search-icon-glass.png" width="10px" height="10px">
+          </button>
+        </span>
+  </form>
+</div>
